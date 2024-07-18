@@ -8,7 +8,7 @@ Welcome to the Quiz Application! This interactive quiz app, built using React an
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-
+- [Code Overview](#code-overview)
 
 ## Features
 
