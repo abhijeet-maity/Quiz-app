@@ -10,24 +10,28 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: pink; */
+  background: linear-gradient(to right, #8360c3, #2ebf91)
 }
 .quizApp {
   width: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fdf0d5;
+  background-color: rgba(255, 255, 249, 0.3);
   padding: 50px;
   border-radius: 6px;
 }
 .quizApp h1 {
-  color: #780000;
+  font-size: 38px;
+  color: #006769;
+  color: #EEF7FF;
+  margin-bottom: 15px;
 }
 .score {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   padding: 10px;
-  color: #c1121f;
+  color: #402E7A;
 }
 .question-heading {
   text-align: center;
@@ -39,7 +43,7 @@ body {
   letter-spacing: 0.3px;
   padding: 10px;
   margin-bottom: 10px;
-  color: #003049;
+  color :#074173
 }
 .alloption-section {
   display: flex;
@@ -48,11 +52,18 @@ body {
 }
 .btn {
   font-size: 16px;
+  font-weight: 700;
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
-  background-color: #669bbc;
+  background-color:#074173;
   color: aliceblue;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #5DEBD7;
+  color: black;
 }
 .answer {
   text-align: center;
@@ -92,4 +103,120 @@ body {
   border-radius: 5px;
   background-color: #669bbc;
   color: #fdf0d5;
+}
+
+/*?? Responsive Design for Laptop */
+@media screen and (max-width: 800px){
+
+  .quizApp {
+    width: 40rem;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+  
+}
+
+/* ?? Large Tablet screen */
+@media screen and (max-width: 650px){
+
+  .quizApp {
+    width: 30rem;
+  }
+
+  .quizApp h1 {
+    font-size: 28px;
+  }
+
+  .question {
+    font-size: 15px;
+  }
+  
+}
+
+/* ?? Small Tablet screen */
+@media screen and (max-width: 488px){
+
+  .quizApp {
+    width: 25rem;
+  }
+
+  .quizApp h1 {
+    font-size: 25px;
+    letter-spacing: 0.4px;
+  }
+
+  .question {
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+  }
+  .btn {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+  }
+  
+}
+
+/* ?? Large Mobile screen */
+@media screen and (max-width: 400px){
+
+  .quizApp {
+    width: 22rem;
+    padding: 35px;
+  }
+  .score {
+    font-size: 18px;
+  }
+  .question-heading {
+    font-size: 15px;
+  }
+  .quizApp h1 {
+    font-size: 23px;
+    letter-spacing: 0.4px;
+  }
+}
+
+/* ?? Small screen */
+
+@media screen and (max-width: 355px){
+
+  .quizApp {
+    width: 20rem;
+    padding: 20px;
+  }
+  
+  .quizApp h1 {
+    font-size: 21px;
+    margin-top: 20px;
+  }
+
+}
+
+/* ?? Extra small screen */
+@media screen and (max-width: 290px){
+
+  .quizApp {
+    width: 16rem;
+    padding: 15px;
+  }
+  
+  .quizApp h1 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .question {
+    font-size: 15px;
+    text-align: center;
+    line-height: 19px;
+  }
+  .btn {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+  }
+  
+
 }
