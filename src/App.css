@@ -193,6 +193,10 @@ body {
     font-size: 21px;
     margin-top: 20px;
   }
+  .result-text {
+    font-size: 18px;
+    text-align: center;
+  }
 
 }
 
@@ -218,6 +222,9 @@ body {
     font-weight: 300;
     letter-spacing: 0.8px;
   }
-  
+  .result-text {
+    font-size: 16px;
+    text-align: center;
+  }
 
 }
