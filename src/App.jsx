@@ -72,7 +72,7 @@ function App() {
 
   return (
     <div className='quizApp'>
-      <h1>Quiz Application</h1>
+      <h1>Quiz Application 🎯🧠</h1>
       <p className='score'>Quiz score : {score}</p>
       <main>
         {question < questionArr.length && <h3 className='question-heading'>Question {question + 1} of 10.</h3>}
@@ -95,7 +95,7 @@ function App() {
         ) : (
           <section className='result-section'>
             <h2>Quiz Completed</h2>
-            <p className='result-text'>{incorrectanswer.length === 0 ? "Congratulations your all answers are correct " : "Answers which are incorrectly answered"}</p>
+            <p className='result-text'>{incorrectanswer.length === 0 ? "Congratulations your all answers are correct 🏆✨" : "Answers which are incorrectly answered"}</p>
             <ul className='incorrect-container'>
               {incorrectanswer.map((question, index) => (
                 <li className='incorrect-answers' key={index}>{question.question} -- Correct Answer : {question.correctAnswer}</li>
