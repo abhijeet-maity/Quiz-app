@@ -67,10 +67,13 @@ body {
 }
 .answer {
   text-align: center;
-  font-size: 18px;
-  margin-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
   padding: 10px;
-  letter-spacing: 0.3px;
+  background-color: gainsboro;
+  border: 6px double black;
+  border-radius: 5px;
 }
 .result-section {
   display: flex;
@@ -196,6 +199,12 @@ body {
   .result-text {
     font-size: 18px;
     text-align: center;
+  }
+  .answer {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 7px;
   }
 
 }
